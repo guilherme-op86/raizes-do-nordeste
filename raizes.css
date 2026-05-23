@@ -1,3 +1,119 @@
-img{
-    width: 200px;
+ html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+ }
+
+ body{
+    font-family: "Roboto";
+    font-size: 1.6rem;
+    background-color: antiquewhite;
+ }
+
+.logo img{
+    width: 20rem;
 }
+
+.menu-container{
+    display: flex;
+    justify-content: space-around;
+    background-color: #733731;
+    color: antiquewhite;
+}
+
+.header-nav{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.titulo-section{
+    position: relative;
+    text-align: center;
+    font-family:"Amatic SC";
+    font-size: 2.8rem;
+    color: #B23A2C;
+    margin: 2rem 0 ;
+}
+
+.titulo-section::before, .titulo-section::after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 10rem;
+    height: 0.2rem;
+    background-color: #8C5E3C;
+}
+
+.titulo-section::before{
+    left: 0;
+    transform: translateX(35%);
+}
+
+.titulo-section::after{
+    right:0;
+    transform: translateX(-35%);
+}
+
+img{
+    width: 10rem;
+}
+
+.cardapio-container{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.opcao{
+    display: flex;
+    gap: 2.4rem;
+    align-items: center;
+}
+
+.descricao{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.descricao p{
+    margin: 0;
+    line-height: 3rem;
+}
+
+.btn{
+    width: 12rem;
+    padding: .5rem;
+    border-radius: 1rem;
+    background-color: #B23A2C;
+    color: antiquewhite;
+    margin-top: 2.4rem;
+}
+
+.destaques-container{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.destaque{
+    display: flex;
+    gap: 2.4rem;
+    align-items: center;
+}
+
+.rodape p{
+    margin: 0;
+    line-height: 3rem;
+}
+
+.rodape{
+    background-color: #733731;
+    color: antiquewhite;
+    padding: 1rem;
+    margin-top: 3rem;
+}
+
+
