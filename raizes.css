@@ -20,6 +20,8 @@
     justify-content: space-around;
     background-color: #733731;
     color: antiquewhite;
+    border-radius: .9rem;
+    padding: 1rem;
 }
 
 .header-nav{
@@ -80,7 +82,7 @@ img{
 
 .descricao p{
     margin: 0;
-    line-height: 3rem;
+    line-height: 2.4rem;
 }
 
 .btn{
@@ -113,7 +115,8 @@ img{
     background-color: #733731;
     color: antiquewhite;
     padding: 1rem;
-    margin-top: 3rem;
+    margin-top: 2.4rem;
+    border-radius: .9rem;
 }
 
 
