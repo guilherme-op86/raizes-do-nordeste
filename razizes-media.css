@@ -1,17 +1,64 @@
-@media screen and (max-width: 23.55em){
+@media screen and (min-width: 23.55em){
 
-    .titulo-section::before, .titulo-section::after{
-        width: 1rem;
-    }
 
-    titulo-section::before{
-        transform: translateX(25%);
-    }
+.titulo-section::before{
+    left: 0;
+    transform: translateX(30%);
+}
 
-    .titulo-section::after{
-        transform: translateX(-25%);
+.titulo-section::after{
+    right:0;
+    transform: translateX(-30%);
+}
 
-    }
+}
 
+@media screen and (min-width: 48rem){
+
+html, body{
+    height: 100vh;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;  
+}
+
+
+.titulo-section::before, .titulo-section::after{
+    width: clamp(8rem, 30%, 20rem);
+}
+
+.titulo-section::before{
+    left: 0;
+    transform: translateX(40%);
+}
+
+.titulo-section::after{
+    right:0;
+    transform: translateX(-40%);
+}
+
+.cardapio-container{
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    gap: 1.5rem;
+
+}
+
+.destaques-container{
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.rodape{
+    margin-top: auto;
+}
 
 }

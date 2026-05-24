@@ -30,6 +30,20 @@
     gap: 2rem;
 }
 
+.banner-content h1, .banner-content p{
+    text-align: center;
+    font-family:"Amatic SC";
+    color: #371411;
+}
+
+.banner-content h1{
+    font-size: 3rem;
+}
+
+.banner-content p{
+    font-size: 2rem;
+}
+
 .titulo-section{
     position: relative;
     text-align: center;
@@ -43,7 +57,7 @@
     content: "";
     position: absolute;
     top: 50%;
-    width: 22%;
+    width: clamp(5rem, 22%, 12rem);
     height: 0.2rem;
     background-color: #8C5E3C;
 }
@@ -65,12 +79,12 @@ img{
 .cardapio-container{
     display: flex;
     flex-direction: column;
-    gap: 3rem;
+    gap: 2.4rem;
 }
 
 .opcao{
     display: flex;
-    gap: 2.4rem;
+    gap: 2rem;
     align-items: center;
 }
 
@@ -97,12 +111,12 @@ img{
 .destaques-container{
     display: flex;
     flex-direction: column;
-    gap: 3rem;
+    gap: 2.4rem;
 }
 
 .destaque{
     display: flex;
-    gap: 2.4rem;
+    gap: 2rem;
     align-items: center;
 }
 
