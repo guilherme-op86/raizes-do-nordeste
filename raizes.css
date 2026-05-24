@@ -43,19 +43,19 @@
     content: "";
     position: absolute;
     top: 50%;
-    width: 10rem;
+    width: 22%;
     height: 0.2rem;
     background-color: #8C5E3C;
 }
 
 .titulo-section::before{
     left: 0;
-    transform: translateX(35%);
+    transform: translateX(30%);
 }
 
 .titulo-section::after{
     right:0;
-    transform: translateX(-35%);
+    transform: translateX(-30%);
 }
 
 img{

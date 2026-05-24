@@ -1,0 +1,17 @@
+@media screen and (max-width: 23.55em){
+
+    .titulo-section::before, .titulo-section::after{
+        width: 1rem;
+    }
+
+    titulo-section::before{
+        transform: translateX(25%);
+    }
+
+    .titulo-section::after{
+        transform: translateX(-25%);
+
+    }
+
+
+}
