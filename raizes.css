@@ -18,7 +18,8 @@
 .menu-container{
     display: flex;
     justify-content: space-around;
-    background-color: #733731;
+    /* background-color: #733731; */
+    background-color: #653e3a;
     color: antiquewhite;
     border-radius: .9rem;
 }
@@ -125,7 +126,8 @@ img{
 }
 
 .rodape{
-    background-color: #733731;
+    /* background-color: #733731; */
+    background-color: #653e3a;
     color: antiquewhite;
     padding: 1rem;
     margin-top: 2.4rem;
