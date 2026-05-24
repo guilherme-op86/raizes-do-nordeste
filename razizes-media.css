@@ -1,6 +1,5 @@
 @media screen and (min-width: 23.55em){
 
-
 .titulo-section::before{
     left: 0;
     transform: translateX(30%);
@@ -27,6 +26,23 @@ body{
     flex-direction: column;  
 }
 
+.logo img{
+    width: 28rem;
+}
+
+.header-nav{
+    gap: 4rem;
+}
+
+.banner-content{
+    background-image: url(imagens/banner-imagem.avif);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 40rem;
+    margin-top: .5rem;
+    padding: 5rem 0 0 40rem;
+}
 
 .titulo-section::before, .titulo-section::after{
     width: clamp(8rem, 30%, 20rem);
@@ -55,10 +71,12 @@ body{
     /* flex-wrap: wrap; */
     justify-content: center;
     gap: 1.5rem;
+    margin-bottom: 5rem;
 }
 
 .rodape{
     margin-top: auto;
+    text-align: right;
 }
 
 }
