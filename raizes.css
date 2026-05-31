@@ -17,7 +17,9 @@
 
 .menu-container{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
     /* background-color: #733731; */
     background-color: #653e3a;
     color: antiquewhite;
@@ -72,10 +74,6 @@
     transform: translateX(-30%);
 }
 
-img{
-    width: 10rem;
-}
-
 .cardapio-container{
     display: flex;
     flex-direction: column;
@@ -85,14 +83,19 @@ img{
 .opcao{
     display: flex;
     gap: 2rem;
-    align-items: center;
+    min-height: 14rem;
+}
+
+.opcao img{
+    width: 10rem;
+    height: 10rem;
+    object-fit: cover;
+    border-radius: .6rem;
 }
 
 .descricao{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
+    flex-direction: column;}
 
 .descricao p{
     margin: 0;
@@ -112,12 +115,6 @@ img{
     display: flex;
     flex-direction: column;
     gap: 2.4rem;
-}
-
-.destaque{
-    display: flex;
-    gap: 2rem;
-    align-items: center;
 }
 
 .rodape p{
