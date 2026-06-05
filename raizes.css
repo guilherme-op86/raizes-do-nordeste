@@ -1,3 +1,8 @@
+ :root{
+    --color-fundo: antiquewhite; 
+    --btn-color: #B23A2C;
+ }
+ 
  html{
     margin: 0;
     padding: 0;
@@ -8,7 +13,7 @@
  body{
     font-family: "Roboto";
     font-size: 1.6rem;
-    background-color: antiquewhite;
+    background-color: var(--color-fundo);
  }
 
 .logo img{
@@ -110,7 +115,7 @@
     width: 12rem;
     padding: .5rem;
     border-radius: 1rem;
-    background-color: #B23A2C;
+    background-color: var(--btn-color);
     color: antiquewhite;
     margin-top: 2.4rem;
 }
