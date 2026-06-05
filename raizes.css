@@ -32,6 +32,10 @@
     gap: 3rem;
 }
 
+.icone-link{
+    color: antiquewhite;
+}
+
 .banner-content h1, .banner-content p{
     text-align: center;
     font-family:"Amatic SC";
