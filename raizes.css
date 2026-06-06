@@ -118,6 +118,7 @@
     background-color: var(--btn-color);
     color: antiquewhite;
     margin-top: 2.4rem;
+    cursor: pointer;
 }
 
 .destaques-container{
