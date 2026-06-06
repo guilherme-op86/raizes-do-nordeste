@@ -1,0 +1,74 @@
+ :root{
+    --color-fundo: antiquewhite; 
+    --btn-color: #B23A2C;
+ }
+ 
+
+html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    background-color: var(--color-fundo);
+    font-family: "Roboto";
+    padding-inline: 1rem;
+}
+
+fieldset{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+    font-size: 2rem;
+    border-radius: 1rem;
+    border-color: #B23A2C;
+}
+
+legend{
+    font-weight: bolder
+}
+
+label{
+    font-size: 2rem;
+    padding: 1.6rem;
+    font-weight: bolder;
+}
+
+input{
+    padding: .75rem;
+    border-radius: 1rem;
+    width: 30rem;
+    
+}
+
+.btn{
+    margin-top: 3rem;
+    border-radius: 1rem;
+    background-color: var(--btn-color);
+    color: antiquewhite;
+    width: 20rem;
+    cursor: pointer;
+    font-size: 1.6rem;   
+}
+
+.cadastro-paragrafo{
+    font-size: 1.6rem;
+    font-weight: bolder
+}
+
+.link-cliqueAqui{
+    font-size: 1.6rem;
+    cursor: pointer;
+    font-weight: bolder;
+}
+

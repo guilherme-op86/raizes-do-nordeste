@@ -47,12 +47,12 @@
     color: #371411;
 }
 
-.banner-content h1{
-    font-size: 3rem;
+.banner-titulo{
+    font-size: 4rem;
 }
 
-.banner-content p{
-    font-size: 2rem;
+.banner-paragrafo{
+    font-size: 3rem;
 }
 
 .titulo-section{
