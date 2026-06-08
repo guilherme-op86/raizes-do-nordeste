@@ -177,13 +177,13 @@ body{
     }
 
     .btn{
-        padding: 1rem;
+       padding: 1rem;
        transform: scale(1);
-       transition: transform .3s ease-in;
+       /* transition: transform .3s ease-in; */
     }
 
     .btn:hover{
-        transform: scale(1.2);
+        /* transform: scale(1.1); */
         background-color: rgb(64, 40, 40);
         
     }
