@@ -10,6 +10,7 @@ const carregarCarrinho = () =>{
 
         const novoTexto = document.createTextNode(`${item.nome} - R$ ${item.preco}`)
         paragrafo.appendChild(novoTexto)
+        paragrafo.classList.add("itemCarrinho")
         lista.appendChild(paragrafo)
 
         total += Number(item.preco)
