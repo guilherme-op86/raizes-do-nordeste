@@ -1,3 +1,4 @@
+/*iphone SE */
 @media screen and (min-width: 23.55em){
 
 .titulo-section::before{
@@ -12,7 +13,7 @@
 
 }
 
-
+/*ipad mini */
 @media screen and (min-width: 48rem){
 
 body{
@@ -86,13 +87,14 @@ body{
 }
 
 .opcao{
+    display: flex ;
+    gap: 1.6rem;
     min-height: 14rem;
 }
 
-
 .descricao{
     display: flex;
-    flex-direction: column;;
+    flex-direction: column;
 }
 
 .descricao .btn{
@@ -113,6 +115,7 @@ body{
 
 }
 
+/*media para desktop*/
 @media screen and (min-width: 75em) {
 
     body{

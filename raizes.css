@@ -91,7 +91,7 @@
 
 .opcao{
     display: flex;
-    gap: 2rem;
+    gap: 5rem ;
     min-height: 14rem;
 }
 
@@ -104,7 +104,8 @@
 
 .descricao{
     display: flex;
-    flex-direction: column;}
+    flex-direction: column;
+}
 
 .descricao p{
     margin: 0;

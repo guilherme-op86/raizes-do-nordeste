@@ -1,9 +1,9 @@
+/*iphone SE */
 @media screen and (max-width: 23.5em){
 
     body{
         padding-block: 1.5rem;
     }
-
 
     label{
     font-size: 1.6rem;
@@ -25,8 +25,8 @@
    
 }
 
+/*ipad mini */
 @media screen and (min-width: 48em) {
-
 
     fieldset{
         font-size: 2.8rem;
@@ -48,6 +48,7 @@
     
 }
 
+/*ipad pro */
 @media screen and (min-width: 64em) {
 
     fieldset{
@@ -91,8 +92,4 @@
         font-size: 2rem;
         padding: 1rem;
     }
-
-   
-
-
 }

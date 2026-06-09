@@ -25,31 +25,11 @@ const contadorCarrinho = () =>{
 
     const carrinhoContador = carrinho.length
 
-    contador.innerText = carrinhoContador
+    contador.textContent = carrinhoContador
 }
 
 window.addEventListener("load", () =>{
     contadorCarrinho()
 })
 
-const loadLGPD = () =>{ 
-    alert("Todos os dados são armazenados conforme Lei nº 13.709/2018 (LGPD - Lei Geral de Proteção de dados")
 
-}
-
-const carregarCarrinho = () =>{
-    const carrinho = JSON.parse(localStorage.getItem("carrinho")) || []
-    const lista = document.querySelector("#listaCarrinho")
-    const totalSpan = document.querySelector("#total")
-
-    let total = 0
-    lista.innerHTML = ""
-
-    carrinho.forEach(item =>{
-        lista.innerHTML += `<p>${item.nome} - R$ ${item.preco} </p>`
-        total += Number(item.preco)
-    })
-
-    totalSpan.innerText = `Total: R$ ${total}`
-    
-}

@@ -1,5 +1,5 @@
+/*ipad mini */
 @media screen and (min-width: 48em) {
-
 
     fieldset{
         font-size: 2.8rem;
@@ -21,8 +21,7 @@
     
 }
 
-
-
+/*ipad pro */
 @media screen and (min-width: 64em) {
 
 
@@ -53,6 +52,7 @@
     }
 }
 
+/*desktop*/
 @media screen and (min-width: 75em){
     legend{
         font-size: 2.6rem;
