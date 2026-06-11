@@ -26,7 +26,6 @@ body{
 fieldset{
     display: flex;
     flex-direction: column;
-    text-align: center;
     padding: 2rem;
     font-size: 2rem;
     border-radius: 1rem;
@@ -47,7 +46,7 @@ label{
 input{
     padding: .75rem;
     border-radius: 1rem;
-    width: 30rem;
+    min-width: 30rem;
     
 }
 
@@ -61,14 +60,4 @@ input{
     font-size: 1.8rem;   
 }
 
-.cadastro-paragrafo{
-    font-size: 1.6rem;
-    font-weight: bolder
-}
-
-.link-cliqueAqui{
-    font-size: 1.6rem;
-    cursor: pointer;
-    font-weight: bolder;
-}
 

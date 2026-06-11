@@ -1,13 +1,43 @@
+/*iphone SE */
+@media screen and (max-width: 37.5em){
+
+    body{
+        padding-block: 1.5rem;
+    }
+
+    label{
+    font-size: 1.6rem;
+    padding: 1rem;
+    font-weight: bolder;
+}
+
+    fieldset{
+        padding: 1.6rem;
+    }
+
+    input{
+    padding: .75rem;
+    border-radius: 1rem;
+    max-width: 30rem;
+    
+}
+   
+}
+
 /*ipad mini */
 @media screen and (min-width: 48em) {
 
     fieldset{
-        font-size: 2.8rem;
+        text-align: center;
         padding: 2rem;
     }
 
-    label{
+    legend{
         font-size: 2.8rem;
+    }
+
+    label{
+        font-size: 2.4rem;
         padding: 2rem;
     }
 
@@ -24,10 +54,12 @@
 /*ipad pro */
 @media screen and (min-width: 64em) {
 
-
     fieldset{
-        font-size: 3.6rem;
-        padding: 4rem;
+        padding: 3rem;
+    }
+
+    legend{
+        font-size: 4rem;
     }
 
     label{
@@ -37,25 +69,21 @@
 
     input{
         padding: 2rem;
-        min-width: 50rem;
+        max-width: 60rem;
     }
 
     .btn{
-        font-size: 2.4rem;
-        min-width: 30rem;
-    }
-    
-    .cadastro-paragrafo{
-        font-size: 2.4rem;
-    }
-
-    .link-cliqueAqui{
-        font-size: 2.4rem;
+        font-size: 3.6rem;
+        width: 40rem;
     }
 }
 
-/*desktop*/
 @media screen and (min-width: 75em){
+
+    body{
+        padding-block: 2rem;
+    }
+
     legend{
         font-size: 2.6rem;
     }

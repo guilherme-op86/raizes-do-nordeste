@@ -25,7 +25,14 @@ const contadorCarrinho = () =>{
 
     const carrinhoContador = carrinho.length
 
-    contador.textContent = carrinhoContador
+    if(carrinhoContador == 0){
+        contador.textContent = ""
+    }
+    else{
+        contador.textContent = carrinhoContador
+    }
+
+    
 }
 
 window.addEventListener("load", () =>{

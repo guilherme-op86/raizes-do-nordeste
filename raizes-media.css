@@ -115,6 +115,49 @@ body{
 
 }
 
+/*ipad pro */
+@media screen and (min-width: 64em){
+    body{
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+    }
+
+    .titulo-section::before, .titulo-section::after{
+        width: clamp(8rem, 30%, 26rem);
+    }
+
+    .titulo-section::before{
+        left: 0;
+        transform: translateX(40%);
+    }
+
+    .titulo-section::after{
+        right:0;
+        transform: translateX(-40%);
+    }
+
+    .opcao{
+        display: flex ;
+        gap: 1rem;
+        min-height: 16rem;
+    }
+
+    .cardapio-container{
+        padding: 2rem;
+    }
+
+    .destaques-container{
+        padding: 2rem;
+    }
+
+    .rodape{
+        margin-top: auto;
+    }
+
+
+}
+
 /*media para desktop*/
 @media screen and (min-width: 75em) {
 
@@ -190,8 +233,5 @@ body{
         background-color: rgb(64, 40, 40);
         
     }
-
-
-
     
 }
