@@ -1,3 +1,31 @@
+/*iphone SE */
+@media screen and (max-width: 23.5em){
+
+    body{
+        padding-block: 1.5rem;
+    
+    }
+
+    label{
+    font-size: 1.6rem;
+    padding: 1.5rem;
+    font-weight: bolder;
+    }
+
+    fieldset{
+        padding: 2rem;
+        font-size: 1.6rem;
+    }
+
+    input{
+    padding: .75rem;
+    border-radius: 1rem;
+    max-width: 25rem;
+    
+    }
+}
+
+
 /*ipad mini */
 @media screen and (min-width: 48em) {
 
@@ -13,6 +41,7 @@
 
     input{
         padding: 1.7rem;
+        min-width: 35rem;
     }
 
     .btn{

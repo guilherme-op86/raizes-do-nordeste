@@ -2,24 +2,25 @@
 @media screen and (max-width: 23.5em){
 
     body{
-        padding-block: 1.5rem;
+        padding-block: 2rem;
+    
     }
 
     label{
     font-size: 1.6rem;
-    padding: 1rem;
+    padding: 1.2rem;
     font-weight: bolder;
 }
 
     fieldset{
-        padding: 3rem;
-        font-size: 1.6rem;
+        padding: 1.2rem;
+        font-size: 2rem;
     }
 
     input{
     padding: .75rem;
     border-radius: 1rem;
-    max-width: 20rem;
+    min-width: 15rem;
     
 }
    
@@ -28,13 +29,17 @@
 /*ipad mini */
 @media screen and (min-width: 48em) {
 
+    body{
+        padding-block: 1.6rem
+    };
+
     fieldset{
-        font-size: 2.8rem;
-        padding: 2rem;
+        font-size: 2.6rem;
+        padding: 1.6rem;
     }
 
     label{
-        font-size: 2.8rem;
+        font-size: 2rem;
         padding: 2rem;
     }
 
@@ -52,17 +57,17 @@
 @media screen and (min-width: 64em) {
 
     fieldset{
-        font-size: 3.6rem;
+        font-size: 3.4rem;
         padding: 2rem;
     }
 
     label{
-        font-size: 3rem;
-        padding: 3rem;
+        font-size: 2.6rem;
+        padding: 2rem;
     }
 
     input{
-        padding: 2rem;
+        padding: 1.4rem;
     }
 
     .btn{
@@ -74,6 +79,7 @@
 
     body{
         padding-block: 2rem;
+
     }
 
     legend{
@@ -81,11 +87,11 @@
     }
 
     label{
-        font-size: 2.4rem;
+        font-size: 2rem;
     }
 
     input{
-        padding: 1.4rem;
+        padding: 1rem;
     }
 
     .btn{
