@@ -5,17 +5,38 @@ const carregarCarrinho = () =>{
 
     let total = 0
 
-    carrinho.forEach(item =>{
-        const paragrafo = document.createElement("p")
+    const dicionario = {moqueca: "Moqueca Nordestina", baiao: "Baião de Dois com Camarão", carneDeSol: "Carne de Sol com Purê de Macaxeira", carneSerca: "Carne Seca com Queijo Gratinado", camarao: "Camarão na Moranga Nordestina", peixeFrito: "Peixe frito com pirão e Vinagrete"}
 
-        const novoTexto = document.createTextNode(`${item.nome} - R$ ${item.preco}`)
-        paragrafo.appendChild(novoTexto)
-        paragrafo.classList.add("itemCarrinho")
-        lista.appendChild(paragrafo)
+    carrinho.forEach(item =>{
+
+        const novaImagem = document.createElement("img")
+        const novoParagrafo = document.createElement("p")
+        const novoParagrafo2 = document.createElement("p")
+        const novaDiv = document.createElement("div")
+        const novaDiv2 = document.createElement("div")
+
+
+        const novoTexto = document.createTextNode(`${dicionario[item.nome]}`)
+        const preco = document.createTextNode(`R$ ${item.preco}`)
+        novoParagrafo.appendChild(novoTexto)
+        novoParagrafo2.appendChild(preco)
+        novaDiv2.appendChild(novoParagrafo)
+        novaDiv2.appendChild(novoParagrafo2)
+
+
+        novaImagem.src = `imagens/${item.nome}.png`
+        novaImagem.alt = `${dicionario[item.nome]}`
+        novaImagem.classList = "imagemPrato"
+
+        novaDiv.classList = "infoPrato"
+        novaDiv2.classList = "dadosPrato"
+        novaDiv.appendChild(novaImagem)
+        novaDiv.appendChild(novaDiv2)
+
+        lista.appendChild(novaDiv)
 
         total += Number(item.preco)
     })
 
-    totalSpan.innerText = `R$${total}`
-    
+    totalSpan.innerText = `R$${total}` 
 }

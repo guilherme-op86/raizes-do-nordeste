@@ -17,21 +17,26 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
  }
+
+ #titulo {
+    font-size: 2.8rem;
+    font-weight: bolder;
+    margin-top: 1.4rem;
+}
 
  .itemCarrinho{
    background-color: rgb(250, 245, 238);
    width: fit-content;
    font-weight: bolder;
-   padding: 1.8rem;
+   padding: 1.4rem;
    border-radius: 1rem;
  }
 
  .totalContainer{
    display: flex;
    gap: 5rem;
-   font-size: 2.4rem;
+   font-size: 2.4rem; 
    margin: 3rem 0;
    position: relative;
  }
@@ -43,6 +48,31 @@
    height: .1rem;
    background-color: black;
  } */
+
+ .imagemPrato{
+    width: 10rem;
+    height: 10rem;
+ }
+
+ .infoPrato{
+    display: flex;
+    gap: 1.4rem;
+    padding: 1rem 0;
+ }
+
+ .dadosPrato{
+  display: flex;
+  flex-direction: column;
+ }
+
+ .dadosPrato p{
+  font-size: 2rem;
+  font-weight: bolder;
+ }
+
+ .totalString{
+  font-weight: bolder;
+ }
 
  #total{
    color: green;
@@ -69,3 +99,4 @@
    text-align: center;
    text-decoration: none;
  }
+ 

@@ -1,0 +1,89 @@
+/*iphone SE */
+@media (max-width: 23.46em) {
+
+  body{
+    padding-block: 1rem;
+  }
+  #titulo{
+    font-size: 2.4rem;
+  }
+
+  .dadosPrato p{
+  font-size: 1.6rem;
+  font-weight: bolder;
+ }
+
+  .imagemPrato{
+    width: 7rem;
+    height: 7rem;
+ }
+  #btnFinalizar{
+   padding: 0.7rem;
+   font-size: 2rem;
+   font-weight: bolder;
+   border-radius: 1rem;
+   background-color: rgb(176, 19, 19);
+   color: white;
+   margin-top: 2rem;
+   width: 30rem;
+   text-align: center;
+   text-decoration: none;
+ }
+
+}
+
+/*ipad mini */
+@media screen and (min-width: 48em){
+
+  #titulo{
+    font-size: 3rem;
+  }
+
+  .dadosPrato p{
+    font-size: 2rem;
+    font-weight: bolder;
+ }
+
+ .infoPrato{
+  gap: 6rem;
+ }
+
+  .dadosPrato p{
+  font-size: 2.4rem;
+  font-weight: bolder;
+ }
+
+ .totalString{
+  font-size: 3rem;
+  font-weight: bolder;
+ }
+
+ #total{
+  font-size: 3rem;
+  font-weight: bolder;
+
+ }
+
+  #btnFinalizar{
+   padding: 1rem;
+   font-size: 2.8rem;
+   font-weight: bolder;
+   border-radius: 1rem;
+   background-color: rgb(176, 19, 19);
+   color: white;
+   margin-top: 3rem;
+   width: 30rem;
+   text-align: center;
+   text-decoration: none;
+ }
+
+
+}
+
+/* ipad air */
+@media screen and (min-width: 51.25em){
+  body{
+    background-color: yellow;
+  }
+  
+}
