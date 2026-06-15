@@ -1,5 +1,5 @@
 /*iphone SE */
-@media screen and (max-width: 37.5em){
+@media screen and (max-width: 23.5em){
 
     body{
         padding-block: 1.5rem;
@@ -9,19 +9,42 @@
     font-size: 1.6rem;
     padding: 1rem;
     font-weight: bolder;
-}
+    }
 
     fieldset{
-        padding: 1.6rem;
+        padding: 1.4rem;
+    }
+
+    legend{
+        font-size: 2rem;
     }
 
     input{
     padding: .75rem;
     border-radius: 1rem;
-    min-width: 24rem;
-    
-}
+    min-width: 20rem;
+    }
+
+    .btn{
+        font-size: 1.6rem;
+        font-weight: bolder;
+        width: 20rem;
+    }
    
+}
+
+@media screen and (min-width: 24.37em) and (max-width: 26.8em){
+    
+    legend{
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .btn{
+        font-size: 2rem;
+        font-weight: bolder;
+        width: 30rem;
+    }
 }
 
 /*ipad mini */
@@ -46,7 +69,38 @@
     }
 
     .btn{
-        font-size: 1.8rem;
+        font-size: 2rem;
+        font-weight: bolder;
+        width: 30rem;
+    }
+    
+}
+
+/* ipad air */
+@media screen and (min-width: 51.25em){
+
+    fieldset{
+        text-align: center;
+        padding: 2rem;
+    }
+
+    legend{
+        font-size: 3.2rem;
+    }
+
+    label{
+        font-size: 2.8rem;
+        padding: 2rem;
+    }
+
+    input{
+        padding: 2rem;
+    }
+
+    .btn{
+        font-size: 2.4rem;
+        font-weight: bolder;
+        width: 40rem;
     }
     
 }
@@ -68,13 +122,14 @@
     }
 
     input{
-        padding: 2rem;
+        padding: 3rem;
         max-width: 60rem;
     }
 
     .btn{
-        font-size: 3.6rem;
-        width: 40rem;
+        font-size: 3.2rem;
+        font-weight: bolder;
+        width: 50rem;
     }
 }
 

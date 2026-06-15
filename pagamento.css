@@ -25,28 +25,27 @@ body{
 fieldset{
     display: flex;
     flex-direction: column;
-    padding: 2rem;
-    font-size: 5rem;
+    padding: 1rem;
     border-radius: 1rem;
     border-color: #B23A2C;
 }
 
 legend{
     font-weight: bolder;
-    font-size: 2rem;
+    font-size: 2.4rem;
 }
 
 label{
-    font-size: 3rem;
+    font-size: 2rem;
     padding: 1.6rem;
     font-weight: bolder;
     text-align: left;
 }
 
 input{
-    padding: .75rem;
+    padding: 1rem;
     border-radius: 1rem;
-    max-width: 40rem;
+    min-width: 20rem;
     
 }
 
@@ -55,7 +54,8 @@ input{
     border-radius: 1rem;
     background-color: var(--btn-color);
     color: antiquewhite;
-    width: 20rem;
+    width: 30rem;
     cursor: pointer;
-    font-size: 1.8rem;   
+    font-size: 2.4rem;
+    font-weight: bolder;
 }

@@ -13,7 +13,9 @@ const carregarCarrinho = () =>{
         const novoParagrafo = document.createElement("p")
         const novoParagrafo2 = document.createElement("p")
         const novaDiv = document.createElement("div")
+        novaDiv.classList = "infoPrato"
         const novaDiv2 = document.createElement("div")
+        novaDiv2.classList = "dadosPrato"
 
 
         const novoTexto = document.createTextNode(`${dicionario[item.nome]}`)
@@ -27,9 +29,7 @@ const carregarCarrinho = () =>{
         novaImagem.src = `imagens/${item.nome}.png`
         novaImagem.alt = `${dicionario[item.nome]}`
         novaImagem.classList = "imagemPrato"
-
-        novaDiv.classList = "infoPrato"
-        novaDiv2.classList = "dadosPrato"
+        
         novaDiv.appendChild(novaImagem)
         novaDiv.appendChild(novaDiv2)
 

@@ -8,6 +8,13 @@
     font-size: 2.4rem;
   }
 
+   .infoPrato{
+    gap: 1rem;
+    background-color: #eccfa0;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+ }
+
   .dadosPrato p{
   font-size: 1.6rem;
   font-weight: bolder;
@@ -17,6 +24,7 @@
     width: 7rem;
     height: 7rem;
  }
+
   #btnFinalizar{
    padding: 0.7rem;
    font-size: 2rem;
@@ -45,45 +53,191 @@
  }
 
  .infoPrato{
-  gap: 6rem;
+    gap: 6rem;
+    background-color: #eccfa0;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
  }
 
   .dadosPrato p{
-  font-size: 2.4rem;
-  font-weight: bolder;
+    font-size: 2.4rem;
+    font-weight: bolder;
+ }
+
+ .imagemPrato{
+    width: 16rem;
+    height: 16rem;
  }
 
  .totalString{
-  font-size: 3rem;
-  font-weight: bolder;
+    font-size: 3rem;
+    font-weight: bolder;
  }
 
  #total{
-  font-size: 3rem;
-  font-weight: bolder;
+    font-size: 3rem;
+    font-weight: bolder;
 
  }
 
   #btnFinalizar{
-   padding: 1rem;
-   font-size: 2.8rem;
-   font-weight: bolder;
-   border-radius: 1rem;
-   background-color: rgb(176, 19, 19);
-   color: white;
-   margin-top: 3rem;
-   width: 30rem;
-   text-align: center;
-   text-decoration: none;
+    padding: 1rem;
+    font-size: 2.8rem;
+    font-weight: bolder;
+    border-radius: 1rem;
+    background-color: rgb(176, 19, 19);
+    color: white;
+    margin-top: 3rem;
+    width: 30rem;
+    text-align: center;
+    text-decoration: none;
  }
-
 
 }
 
 /* ipad air */
 @media screen and (min-width: 51.25em){
-  body{
-    background-color: yellow;
+
+  #titulo{
+    padding-top: 3rem;
+    font-size: 3rem;
   }
+
+  .imagemPrato{
+    width: 16rem;
+    height: 16rem;
+ }
+
+  .dadosPrato p{
+    font-size: 2.6rem;
+    font-weight: bolder;
+ }
+
+ .infoPrato{
+    background-color: #eccfa0;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+ }
+
+  .totalString{
+    font-size: 3.6rem;
+    font-weight: bolder;
+ }
+
+ #total{
+    font-size: 3.6rem;
+    font-weight: bolder;
+ }
+
+   #btnFinalizar{
+    padding: 1rem;
+    font-size: 3.6rem;
+    font-weight: bolder;
+    border-radius: 1rem;
+    background-color: rgb(176, 19, 19);
+    color: white;
+    margin-top: 3rem;
+    width: 40rem;
+    text-align: center;
+    text-decoration: none;
+ }
   
+}
+
+@media screen and (min-width: 64em) {
+
+    #titulo{
+    padding-top: 3rem;
+    font-size: 4rem;
+  }
+
+  .imagemPrato{
+    width: 22rem;
+    height: 22rem;
+ }
+
+  .dadosPrato p{
+    font-size: 3rem;
+    font-weight: bolder;
+ }
+
+  .infoPrato{
+    background-color: #eccfa0;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+ }
+
+  .totalString{
+    font-size: 4rem;
+    font-weight: bolder;
+ }
+
+ #total{
+    font-size: 4rem;
+    font-weight: bolder;
+ }
+
+   #btnFinalizar{
+    padding: 2rem;
+    font-size: 4rem;
+    font-weight: bolder;
+    border-radius: 1rem;
+    background-color: rgb(176, 19, 19);
+    color: white;
+    margin-top: 3rem;
+    width: 50rem;
+    text-align: center;
+    text-decoration: none;
+ }
+  
+}
+
+@media screen and (min-width: 75em){
+
+  #titulo{
+    padding-top: 3rem;
+    font-size: 4rem;
+  }
+
+  .imagemPrato{
+    width: 16rem;
+    height: 16rem;
+ }
+
+ .infoPrato{
+    gap: 3rem;
+    flex-wrap: wrap;
+    background-color: #eccfa0; /* cor de exemplo */
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+ }
+
+  .dadosPrato p{
+    font-size: 2rem;
+    font-weight: bolder;
+ }
+
+  .totalString{
+    font-size: 3.6rem;
+    font-weight: bolder;
+ }
+
+ #total{
+    font-size: 3.6rem;
+    font-weight: bolder;
+ }
+
+   #btnFinalizar{
+    padding: 2rem;
+    font-size: 3rem;
+    font-weight: bolder;
+    border-radius: 1rem;
+    background-color: rgb(176, 19, 19);
+    color: white;
+    margin-top: 3rem;
+    width: 30rem;
+    text-align: center;
+    text-decoration: none;
+ }
+
 }
