@@ -16,9 +16,16 @@ const adicionarCarrinho = (nome, preco) =>{
 
     let quantidade = 1
 
-    carrinho.forEach
+    const procura = carrinho.find(prato => prato.nome == nome)
 
-    carrinho.push({nome, preco})
+    if(procura){
+        procura.quantidade +=1
+    }
+    else{
+        carrinho.push({nome, preco, quantidade})
+    }
+
+    //carrinho.push({nome, preco})
 
     localStorage.setItem("carrinho", JSON.stringify(carrinho))
 
@@ -28,16 +35,7 @@ const adicionarCarrinho = (nome, preco) =>{
 const contadorCarrinho = () =>{
     const carrinho = JSON.parse(localStorage.getItem("carrinho")) || []
 
-    const carrinhoContador = carrinho.length
-
-    if(carrinhoContador == 0){
-        contador.textContent = ""
-    }
-    else{
-        contador.textContent = carrinhoContador
-    }
-
-    
+  
 }
 
 window.addEventListener("load", () =>{
