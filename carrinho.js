@@ -26,10 +26,14 @@ const carregarCarrinho = () =>{
         const divContador = document.createElement("div")
         const iconMais = document.createElement("i")
         const iconMenos = document.createElement("i")
+        const iconLixeira = document.createElement("i")
+        const contPrato = document.createElement("span")
         divContador.classList.add("divContador")
         iconMenos.classList.add("fa-solid", "fa-minus")
+        contPrato.classList.add("qtdPrato")
         iconMais.classList.add("fa-solid", "fa-plus")
-        divContador.append(iconMenos, iconMais)
+        iconLixeira.classList.add("fa-solid", "fa-trash")
+        divContador.append(iconMenos,contPrato, iconMais, iconLixeira)
 
 
         const novoTexto = document.createTextNode(`${dicionario[item.nome]}`)

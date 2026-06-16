@@ -98,8 +98,22 @@
  
 .divContador{
    display: flex;
-   gap: 2rem;
    align-items: center;
-   cursor: pointer;
+   gap: 2rem;
+   margin-left: auto;
+   padding-right: auto;
+   /*background-color: yellow;*/
+}
 
+i{
+   height: fit-content;
+   background-color: aqua;
+}
+
+ i:hover {
+   cursor: pointer;
+}
+
+.qtdPrato{
+   display: inline-block;
 }

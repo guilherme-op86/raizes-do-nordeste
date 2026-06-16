@@ -1,6 +1,7 @@
 const botoes = document.querySelectorAll(".btn")
 const contador = document.querySelector(".contador")
 
+
 botoes.forEach(botao =>{
     botao.addEventListener("click", () =>{
         const nome = botao.dataset.nome
@@ -12,6 +13,10 @@ botoes.forEach(botao =>{
 
 const adicionarCarrinho = (nome, preco) =>{
     const carrinho = JSON.parse(localStorage.getItem("carrinho")) || []
+
+    let quantidade = 1
+
+    carrinho.forEach
 
     carrinho.push({nome, preco})
 
