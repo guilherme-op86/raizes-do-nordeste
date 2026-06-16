@@ -35,6 +35,8 @@ const adicionarCarrinho = (nome, preco) =>{
 const contadorCarrinho = () =>{
     const carrinho = JSON.parse(localStorage.getItem("carrinho")) || []
 
+    for
+
   
 }
 
