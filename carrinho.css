@@ -107,7 +107,6 @@
 
 i{
    height: fit-content;
-   background-color: aqua;
 }
 
  i:hover {
@@ -116,4 +115,9 @@ i{
 
 .qtdPrato{
    display: inline-block;
+}
+
+.desabilitado {
+  pointer-events: none;
+  opacity: 0.4;
 }

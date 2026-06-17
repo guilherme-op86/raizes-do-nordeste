@@ -64,6 +64,26 @@ const carregarCarrinho = () =>{
                 nomePrato.quantidade -= 1
             }
 
+            //trava o botão de - para que a quantidade não fique negativa
+            if(nomePrato.quantidade = 0){
+                iconMais.classList.add("desabilitado")
+            }
+
+            localStorage.setItem("carrinho", JSON.stringify(carrinho))
+            carregarCarrinho()
+        })
+
+        iconLixeira.dataset.nome = item.nome
+
+        iconLixeira.addEventListener("click", () =>{
+            const nome = iconLixeira.dataset.nome
+
+            const nomePrato = carrinho.find(prato => prato.nome = nome)
+
+            if(nomePrato){
+                carrinho.removeItem(nomePrato)
+            }
+
             localStorage.setItem("carrinho", JSON.stringify(carrinho))
             carregarCarrinho()
         })
