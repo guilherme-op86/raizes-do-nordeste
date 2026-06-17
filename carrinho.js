@@ -59,14 +59,13 @@ const carregarCarrinho = () =>{
             const nome = iconMenos.dataset.nome
 
             const nomePrato = carrinho.find(prato => prato.nome == nome)
-
-            if(nomePrato){
-                nomePrato.quantidade -= 1
-            }
-
+            
             //trava o botão de - para que a quantidade não fique negativa
-            if(nomePrato.quantidade = 0){
+            if(nomePrato.quantidade == 0){
                 iconMais.classList.add("desabilitado")
+            }
+            else{
+                nomePrato.quantidade -= 1
             }
 
             localStorage.setItem("carrinho", JSON.stringify(carrinho))
