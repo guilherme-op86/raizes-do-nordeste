@@ -47,6 +47,11 @@ const contadorCarrinho = () =>{
     }
 }
 
+//contador do carrinho não atualiza com os botoes de + e -
+window.addEventListener("storage", ()=>{
+    carregarCarrinho()
+})
+
 window.addEventListener("load", () =>{
     contadorCarrinho()
 })
