@@ -3,9 +3,9 @@ const carregarCarrinho = () =>{
     const lista = document.querySelector("#listaCarrinho")
     const totalSpan = document.querySelector("#total")
 
-    let total = 0
+    lista.innerHTML = ""
 
-    const dicionario = {moqueca: "Moqueca Nordestina", baiao: "Baião de Dois com Camarão", carneDeSol: "Carne de Sol com Purê de Macaxeira", carneSerca: "Carne Seca com Queijo Gratinado", camarao: "Camarão na Moranga Nordestina", peixeFrito: "Peixe frito com pirão e Vinagrete"}
+    const dicionario = {moqueca: "Moqueca Nordestina", baiao: "Baião de Dois com Camarão", carneDeSol: "Carne de Sol com Purê de Macaxeira", carneSeca: "Carne Seca com Queijo Gratinado", camarao: "Camarão na Moranga Nordestina", peixeFrito: "Peixe frito com pirão e Vinagrete"}
 
     carrinho.forEach(item =>{
 
@@ -33,7 +33,8 @@ const carregarCarrinho = () =>{
         contPrato.classList.add("qtdPrato")
         iconMais.classList.add("fa-solid", "fa-plus")
         iconLixeira.classList.add("fa-solid", "fa-trash")
-        divContador.append(iconMenos,contPrato, iconMais, iconLixeira)
+        contPrato.innerText = item.quantidade
+        divContador.append(iconMenos, contPrato, iconMais, iconLixeira)
 
 
         const novoTexto = document.createTextNode(`${dicionario[item.nome]}`)
@@ -41,22 +42,44 @@ const carregarCarrinho = () =>{
         novoParagrafo.appendChild(novoTexto)
         novoParagrafo2.appendChild(preco)
         novaDiv2.append(novoParagrafo, novoParagrafo2)
-        //novaDiv2.appendChild(novoParagrafo)
-        //novaDiv2.appendChild(novoParagrafo2)
-
 
         novaImagem.src = `imagens/${item.nome}.png`
         novaImagem.alt = `${dicionario[item.nome]}`
         novaImagem.classList = "imagemPrato"
         
         novaDiv.append(novaImagem, novaDiv2, divContador)
-        //novaDiv.appendChild(novaImagem)
-        //novaDiv.appendChild(novaDiv2)
 
         lista.appendChild(novaDiv)
 
-        total += Number(item.preco)
+        //total *= Number(item.preco)
+       
     })
 
-    totalSpan.innerText = `R$${total}` 
+    totalSpan.innerText = `R$ ${calcularTotal()}`
 }
+
+//função que calcular o valor total a ser pago de acordo com a quantidade
+const calcularTotal = () =>{
+    const carrinho = JSON.parse(localStorage.getItem("carrinho")) || [] 
+
+    let valorTotal = 0
+
+    carrinho.forEach(prato =>{
+    let quantidade = Number(prato.quantidade)
+    let preco = Number(prato.preco)
+    let total = quantidade * preco 
+    valorTotal += total
+    })
+
+    return valorTotal
+}
+
+//evento que sincroniza o click dos botões Adicionar em raízes HTML com o localStorage e atualiza o carrinho automaticamente
+window.addEventListener("storage", ()=>{
+    carregarCarrinho()
+})
+
+
+
+
+

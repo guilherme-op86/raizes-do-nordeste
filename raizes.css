@@ -26,7 +26,7 @@
     align-items: center;
     padding: 1rem 2rem;
     /* background-color: #733731; */
-    background-color: #653e3a;
+    background-color: #241715;
     color: antiquewhite;
     border-radius: .9rem;
 }
@@ -39,6 +39,15 @@
 
 .icone-link{
     color: antiquewhite;
+}
+
+a{
+    text-decoration: none;
+}
+
+.contador{
+    color: antiquewhite;
+    text-decoration: none;
 }
 
 .banner-content h1, .banner-content p{
@@ -135,7 +144,8 @@
 
 .rodape{
     /* background-color: #733731; */
-    background-color: #653e3a;
+    /*background-color: #653e3a;*/
+    background-color: #241715;
     color: antiquewhite;
     padding: 1rem;
     margin-top: 2.4rem;

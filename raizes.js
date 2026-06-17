@@ -25,8 +25,6 @@ const adicionarCarrinho = (nome, preco) =>{
         carrinho.push({nome, preco, quantidade})
     }
 
-    //carrinho.push({nome, preco})
-
     localStorage.setItem("carrinho", JSON.stringify(carrinho))
 
     contadorCarrinho()
@@ -35,9 +33,18 @@ const adicionarCarrinho = (nome, preco) =>{
 const contadorCarrinho = () =>{
     const carrinho = JSON.parse(localStorage.getItem("carrinho")) || []
 
-    for
+    let soma = 0
 
-  
+    carrinho.forEach(prato =>{
+        soma += Number(prato.quantidade)
+    })
+
+    if(soma == 0){
+        contador.innerText = ""
+    }
+    else{
+        contador.innerText = soma
+    }
 }
 
 window.addEventListener("load", () =>{
