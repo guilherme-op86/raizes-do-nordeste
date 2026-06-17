@@ -27,12 +27,48 @@ const carregarCarrinho = () =>{
         const iconMais = document.createElement("i")
         const iconMenos = document.createElement("i")
         const iconLixeira = document.createElement("i")
+        // cria o contador que conta os pratos no adicionarCarrinho
         const contPrato = document.createElement("span")
+        
         divContador.classList.add("divContador")
         iconMenos.classList.add("fa-solid", "fa-minus")
         contPrato.classList.add("qtdPrato")
         iconMais.classList.add("fa-solid", "fa-plus")
         iconLixeira.classList.add("fa-solid", "fa-trash")
+        //adiciona a propriedade data-* 
+        iconMais.dataset.nome = item.nome
+
+        //funcao para adicionais mais pratos ao clicar em +
+        iconMais.addEventListener("click", () =>{
+            const nome = iconMais.dataset.nome
+
+            const nomePrato = carrinho.find(prato => prato.nome == nome)
+
+            if(nomePrato){
+                nomePrato.quantidade += 1
+            }
+
+            localStorage.setItem("carrinho", JSON.stringify(carrinho))
+
+            carregarCarrinho()
+        })
+
+        iconMenos.dataset.nome = item.nome
+
+        iconMenos.addEventListener("click", () =>{
+            const nome = iconMenos.dataset.nome
+
+            const nomePrato = carrinho.find(prato => prato.nome == nome)
+
+            if(nomePrato){
+                nomePrato.quantidade -= 1
+            }
+
+            localStorage.setItem("carrinho", JSON.stringify(carrinho))
+            carregarCarrinho()
+        })
+
+        //adiciona a quantidade de pratos no span do contador
         contPrato.innerText = item.quantidade
         divContador.append(iconMenos, contPrato, iconMais, iconLixeira)
 
@@ -51,14 +87,12 @@ const carregarCarrinho = () =>{
 
         lista.appendChild(novaDiv)
 
-        //total *= Number(item.preco)
-       
     })
 
     totalSpan.innerText = `R$ ${calcularTotal()}`
 }
 
-//função que calcular o valor total a ser pago de acordo com a quantidade
+//função que calcula o valor total a ser pago de acordo com a quantidade
 const calcularTotal = () =>{
     const carrinho = JSON.parse(localStorage.getItem("carrinho")) || [] 
 
@@ -79,6 +113,12 @@ window.addEventListener("storage", ()=>{
     carregarCarrinho()
 })
 
+window.addEventListener("load", () =>{
+    carregarCarrinho()
+})
+
+
+    
 
 
 
