@@ -26,7 +26,6 @@ body{
 fieldset{
     display: flex;
     flex-direction: column;
-    text-align: center;
     padding: 2rem;
     font-size: 2rem;
     border-radius: 1rem;
@@ -34,7 +33,9 @@ fieldset{
 }
 
 legend{
-    font-weight: bolder
+    font-weight: bolder;
+    text-align: center;
+    margin: 0 auto;
 }
 
 label{
