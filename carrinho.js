@@ -77,13 +77,9 @@ const carregarCarrinho = () =>{
         iconLixeira.addEventListener("click", () =>{
             const nome = iconLixeira.dataset.nome
 
-            const nomePrato = carrinho.find(prato => prato.nome = nome)
+            const novoCarrinho = carrinho.filter(prato => prato.nome !== nome)
 
-            if(nomePrato){
-                carrinho.removeItem(nomePrato)
-            }
-
-            localStorage.setItem("carrinho", JSON.stringify(carrinho))
+            localStorage.setItem("carrinho", JSON.stringify(novoCarrinho))
             carregarCarrinho()
         })
 
