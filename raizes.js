@@ -47,9 +47,9 @@ const contadorCarrinho = () =>{
     }
 }
 
-//contador do carrinho não atualiza com os botoes de + e -
+//contadorCarrinho() para atualizar os contadores de raizes.html e carrinho.html de forma sincronizada
 window.addEventListener("storage", ()=>{
-    carregarCarrinho()
+    contadorCarrinho()
 })
 
 window.addEventListener("load", () =>{
