@@ -12,15 +12,15 @@ const atualizaPontos = () =>{
 
         const pontosParagrafo = document.createElement("p")
         pontosParagrafo.classList.add ("pontosParagrafo")
-        const ponstosSpan = document.createElement("span")
-        ponstosSpan.classList.add("ponstosSpan")
+        const pontosSpan = document.createElement("span")
+        pontosSpan.classList.add("pontosSpan")
 
         const pontos = (Math.floor((soma / 1000) * 10))
         
-        const pontosTexto = document.createTextNode("Você tem um total de: ")
-        const pontosTotal = document.createTextNode(`${pontos} pontos`)
-        ponstosSpan.appendChild(pontosTotal)
-        pontosParagrafo.append(pontosTexto, pontosTotal)
+        const pontosTexto = document.createTextNode("Com sua compra atual você ganhará: ")
+        const pontosTotal = document.createTextNode(`${pontos} ponto(s)`)
+        pontosSpan.appendChild(pontosTotal)
+        pontosParagrafo.append(pontosTexto, pontosSpan)
 
         pontosContainer.appendChild(pontosParagrafo)
         

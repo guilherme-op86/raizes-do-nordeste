@@ -12,7 +12,6 @@ html{
 
 body{
     display: flex;
-    
     align-items: center;
     flex-direction: column;
     min-height: 100vh;
@@ -29,4 +28,12 @@ body{
 .subtitulo{
     font-size: 1.6rem;
     text-align: center;
+}
+
+.pontosParagrafo{
+    font-size: 1.6rem;
+}
+
+.pontosSpan{
+    color: blue;
 }
