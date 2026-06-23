@@ -1,0 +1,32 @@
+ :root{
+    --color-fundo: antiquewhite; 
+ }
+ 
+
+html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body{
+    display: flex;
+    
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    background-color: var(--color-fundo);
+    font-family: "Roboto";
+}
+
+.titulo-principal{
+    color: rgb(182, 40, 40);
+    font-size: 3.6rem;
+}
+
+.subtitulo{
+    font-size: 1.6rem;
+    text-align: center;
+}
