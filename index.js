@@ -26,8 +26,9 @@ const adicionarCarrinho = (nome, preco) =>{
     }
 
     localStorage.setItem("carrinho", JSON.stringify(carrinho))
-
+    
     contadorCarrinho()
+    
 }
 
 const contadorCarrinho = () =>{

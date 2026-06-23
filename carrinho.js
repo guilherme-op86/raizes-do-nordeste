@@ -49,7 +49,7 @@ const carregarCarrinho = () =>{
             }
 
             localStorage.setItem("carrinho", JSON.stringify(carrinho))
-
+            localStorage.setItem("atualizacaoCarrinho", Date.now())
             carregarCarrinho()
         })
 
@@ -69,6 +69,7 @@ const carregarCarrinho = () =>{
             }
 
             localStorage.setItem("carrinho", JSON.stringify(carrinho))
+            localStorage.setItem("atualizacaoCarrinho", Date.now())
             carregarCarrinho()
         })
 
@@ -80,6 +81,7 @@ const carregarCarrinho = () =>{
             const novoCarrinho = carrinho.filter(prato => prato.nome !== nome)
 
             localStorage.setItem("carrinho", JSON.stringify(novoCarrinho))
+            localStorage.setItem("atualizacaoCarrinho", Date.now())
             carregarCarrinho()
         })
 

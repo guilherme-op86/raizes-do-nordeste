@@ -7,7 +7,7 @@ const atualizaPontos = () =>{
 
     carrinho.forEach(item =>{
 
-        soma += item.preco
+        soma += item.preco * item.quantidade
     })
 
         const pontosParagrafo = document.createElement("p")
@@ -24,9 +24,14 @@ const atualizaPontos = () =>{
 
         pontosContainer.appendChild(pontosParagrafo)
         
-        localStorage.JSON.parse()
 }
 
 window.addEventListener("load", () =>{
     atualizaPontos()
+})
+
+window.addEventListener("storage", (event) =>{
+    if(event.key == "carrinho" || event.key == "atualizacaoCarrinho"){
+        atualizaPontos()
+    } 
 })
