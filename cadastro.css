@@ -60,4 +60,21 @@ input{
     font-size: 1.8rem;   
 }
 
+#mensagem {
+  position: fixed;
+  top: 2rem;
+  right: 2rem;
+  background: #4caf50;
+  color: white;
+  padding: 1.2rem 2rem;
+  border-radius: .6rem;
+  font-size: 1.6rem;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .4s ease;
+}
+#mensagem.show {
+  opacity: 1;
+}
+
 
