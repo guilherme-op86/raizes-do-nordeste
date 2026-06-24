@@ -12,7 +12,7 @@ const mostrarMensagem = (texto) =>{
 
     setTimeout(() =>{
         mensagem.classList.remove("show")
-    }, 3000)
+    }, 4000)
 
 }
 
