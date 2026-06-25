@@ -1,3 +1,4 @@
+
 /*iphone SE */
 @media screen and (min-width: 23.55em){
 
@@ -58,8 +59,10 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: flex-end;
-    padding-right: 8rem;
+    padding-right: 3rem;
+    margin-top: .5rem;
 }
+
 
 .titulo-section::before, .titulo-section::after{
     width: clamp(8rem, 30%, 20rem);
@@ -130,6 +133,7 @@ body{
         display: flex;
         flex-direction: column;
         height: 100vh;
+        padding-block: 1rem;
     }
 
     .logo img{
@@ -159,6 +163,14 @@ body{
         font-size: 6rem;
     }
 
+    .banner-content p{
+        font-size: 3.6rem;
+    }
+
+    .banner-content h1{
+        font-size: 5rem;
+    }
+
     .seletorCidade{
         padding: 2rem;
         display: flex;
@@ -172,6 +184,7 @@ body{
         border: 4px solid black;
         font-size: 1.6rem
 }
+
     .opcao{
         display: flex ;
         gap: 1rem;
@@ -234,8 +247,9 @@ body{
 }
 
     .banner-content{
-        min-height: 60rem;
-        padding-right: 20rem;
+        min-height: 80rem;
+        padding-right: 10rem;
+        font-size: 10rem;
     }
 
     .titulo-section{
