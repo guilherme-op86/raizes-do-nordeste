@@ -28,6 +28,7 @@ body{
 .subtitulo{
     font-size: 1.6rem;
     text-align: center;
+    padding-inline: 1rem;
 }
 
 .pontosParagrafo{

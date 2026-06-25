@@ -1,0 +1,30 @@
+/* ipad mini*/
+@media  screen and (min-width: 48em) {
+    
+    .subtitulo{
+        font-size: 2.6rem;
+    }
+    
+    .pontosParagrafo{
+        font-size: 2rem;
+    }
+    
+}
+
+
+/*ipad pro */
+@media screen and (min-width: 64em) {
+
+    .titulo-principal{
+        font-size: 4.2rem;
+    }
+
+    .subtitulo{
+        font-size: 3.2rem;
+    }
+    
+    .pontosParagrafo{
+        font-size: 2.8rem;
+    }
+    
+}
