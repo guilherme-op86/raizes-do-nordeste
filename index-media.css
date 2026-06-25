@@ -1,6 +1,10 @@
 
 /*iphone SE */
-@media screen and (min-width: 23.55em){
+@media screen and (max-width: 23.55em){
+
+    .header-nav{
+        gap: 2rem;
+    }
 
 .titulo-section::before{
     left: 0;
@@ -235,13 +239,11 @@ body{
     flex-direction: column;  
     padding-inline: 2rem;
     padding-block: 1.5rem;
-    font-size: 3rem
-
 }
 
     .logo img{
-    width: 40rem;
-    height: 28rem;
+    width: 30rem;
+    height: 20rem;
 }
 
     .header-nav{
@@ -255,7 +257,7 @@ body{
     }
 
     .titulo-section{
-        font-size: 5rem;
+        font-size: 4rem;
     }
 
     .titulo-section::before, .titulo-section::after{
@@ -285,6 +287,10 @@ body{
         padding: 3rem;
     }
 
+    .descricao{
+        font-size: 2rem;
+    }
+
     .destaques-container{
         justify-content: space-around;
         padding: 3rem;
@@ -299,6 +305,10 @@ body{
     .btn:hover{
         background-color: rgb(64, 40, 40);
         
+    }
+
+    .rodape{
+        font-size: 2rem;
     }
     
 }
